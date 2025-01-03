@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB; /* Sky blue background */
+}
+
+.game-container {
+    text-align: center;
+}
+
+.game-canvas {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    border: 3px solid #000;
+    overflow: hidden;
+    background: url('game-assets/road.png') repeat-y;
+}
+
+.player {
+    position: absolute;
+    width: 50px; /* Width of player */
+    height: 50px; /* Height of player */
+    background: url('game-assets/player.png') no-repeat center center;
+    background-size: contain;
+    bottom: 20px;
+    left: 125px; /* Center the player */
+}
